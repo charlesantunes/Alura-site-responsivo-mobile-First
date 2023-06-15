@@ -1,16 +1,16 @@
-.chamada  {
+.cabecalho{
     display: flex;
     flex-direction: column;
     align-items: center;
 
     color: var(--branco);
     text-align: center;
-    
+
     background-color: var(--bg-chamada-mobile);
 
-    padding-top: 12.25rem;
     padding-bottom: 2.5rem;
 }
+
 
 .chamada__titulo {
     font-family: var(--montserrat);
@@ -38,6 +38,38 @@ essa media é usada para impressão de papel, botão imprimir
 } */
 
 /*Tela de tablet*/
+@media screen and (min-width: 360px){
+    .cabecalho__navegacao{
+        display: flex;
+        justify-content: space-around;
+    }
+    .cabecalho__link{
+        margin: 0.5rem 0.4rem;
+    }
+    .cabecalho__link:hover{
+        text-decoration: underline;
+    }
+    .cabecalho__link:active{
+        background-color: var(--vermelho-forte);
+    }
+    .chamada__texto{
+        max-width: 600px;
+    }
+    .chamada__titulo{
+        font-size: 1.5rem;
+        position: absolute;
+        top: 14rem;
+    }
+    .cabecalho__logo{
+        border-radius: 50px;
+    }
+    .chamada__botao:active{
+        background-color: var(--vermelho-forte);
+        opacity: 0.5;
+        transform: scale(1.05);
+    }
+}
+
 @media screen and (min-width: 768px){
     .chamada__texto{
         max-width: 600px;

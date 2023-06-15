@@ -21,9 +21,6 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-}
-
-.container{
     padding-left: 6%;
     padding-right: 6%;
 }
@@ -44,4 +41,16 @@ body{
         padding-right: calc((100% - 940px)/2);
     }
 }
-
+@media screen and (min-width: 360px) {
+    .botao {
+            display: block;
+            text-align: center;
+            width: 100%;
+            max-width: 350px;
+            box-sizing: border-box;
+            /*faz respeitar o width máximo do pai(.container)*/
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            margin-top: 5rem;
+        }
+}
